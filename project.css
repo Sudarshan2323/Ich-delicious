@@ -1,0 +1,284 @@
+:root {
+    --clr-primary: rgb(48, 223, 17);
+    --clr-secondary: #272d36;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: whitesmoke;
+}
+
+.section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 28px auto;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.margin-right-md {
+    margin-bottom: 4.8rem !important;
+}
+
+strong {
+    font-weight: 500;
+}
+
+nav {
+    padding: 0 33px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 22;
+    float: center;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    padding: 7px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+.menu a.active,
+.menu a:hover {
+    border-bottom: 2px solid var(--clr-primary);
+    transition: 0.3s;
+}
+
+#check {
+    display: none;
+}
+
+/* End Menu */
+
+/* Hero Section */
+#home {
+    padding: 132px 33px;
+    display: flex;
+    justify-content: left;
+    align-items: center ;
+    background-position:center;
+    height: 830px;
+    background-image: url("home1.jpg");
+}
+
+.text{
+    width: 50%;
+}
+
+.text {
+    margin: 0 20px;
+}
+.text h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 0.1rem;/*
+    animation:bounce 0.7s cubic-bezier(0.8, 0, 1, 1) infinite alternate;
+}@keyframes bounce {
+    100%{
+        margin-top: 80px;
+    }*/
+}
+.text p{
+    font-size: 24px;
+}
+
+
+#home .text {
+    margin-left: 30px;
+    color: #fff;
+}
+/*
+button{
+    border: 2px solid white;
+    color: #390ee6;
+    border-radius: 15px;
+    height: auto;
+    width: 160px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 70px;
+    overflow: hidden;
+  }
+  button a{
+    display: inline-block;
+    text-decoration: none;
+  }
+ .btn:hover{
+    color: white;
+    background-color: royalblue;
+ }
+ */
+ .text button{
+    top: 80px;
+    margin-left: 300px;
+
+ }
+ .hover-button {
+    /* Default button styles (optional) */
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 80px;
+  
+    /* Hover effect using `:hover` selector */
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #020c00;
+      color: rgb(254, 250, 250);
+    }
+  }
+  .text button a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+
+/* End Hero Section */
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    height: 890px;
+}
+
+.footer .container {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.container {
+    max-width: 120rem;
+    padding: 0.2rem; 
+    margin-top: 0rem;
+}
+
+.footer h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.footer h4 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    color: rgb(182, 245, 221);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+
+.footer ul {
+    list-style: none;
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.footer ul li {
+    cursor: pointer;
+    color: black;
+}
+.footer ul li a{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-about {
+    width: 50%;
+    height: 330px;
+    font-size: 26px;
+    margin-left: 25px;
+}
+.footer-about p{
+    margin-left: 100px;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.poster img{
+    background-size: cover;
+    margin-left: 20%;
+    height: 90%;
+
+}
+.about{
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+}
+.black{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px;
+    padding: 35px;
+}
+
+.logoss img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+    box-shadow: -1px -1px 10px 16px rgb(234, 235, 235);
+}
+
+/* End Footer */

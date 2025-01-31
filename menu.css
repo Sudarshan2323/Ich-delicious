@@ -1,0 +1,116 @@
+#menu{
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.sec-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+    gap: 30px;
+
+  }
+  @media screen and (max-width: 988px){
+    .sec-1{
+      overflow: scroll;
+      scroll-behavior: smooth;
+      background-color: transparent;
+      display: flex;
+    }
+  }
+
+
+  .card {
+    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: 0.3s; /* Enable smooth transitions */
+    width: 300px;
+    border-radius: 5px;
+    max-height: 450px;
+    background-color: white;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.1);
+    z-index: 10;
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+
+  }
+  
+  .btn {
+    margin-top: 1rem; /* Add some spacing before the button */
+  }
+  .card-text{
+    font-size: 18px;
+    display: inline-block;
+    color: rgb(205, 111, 111);
+    margin-bottom: 18px;
+  }
+  h2{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .space-main{
+    height: 80px;
+    width: auto;
+  }
+  .space-main h2{
+    color: aliceblue;
+  }
+  .space-r{
+    height: 40px;
+    width: auto;
+    background-color: white;
+  }
+  .space{
+    height: 40px;
+    width: auto;
+  }
+  .card-main{
+    background-color: rgb(182, 245, 221);
+    height: 650px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 10px;
+    position: relative;
+  }
+
+  
+  .space-between{
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-primary{
+    border: 2px solid black;
+    padding: 4px 18px;
+    border-radius: 9px;
+    color: antiquewhite;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+  }

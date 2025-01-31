@@ -1,0 +1,87 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(182, 245, 221);
+}
+.top{
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+ h1{
+    font-size: 46px;
+    text-align: center;
+    margin:50px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    background-color: aqua;
+    flex-wrap: wrap;
+    gap:30px;
+  }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: 0.3s; /* Enable smooth transitions */
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: white;
+    display: grid;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.1);
+    z-index: 20;
+}
+  
+  .card-img-top {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-top: 0.75rem;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .btn {
+    margin-top: 1rem; /* Add some spacing before the button */
+  }
+  .card-text{
+    font-size: 18px;
+    display: inline-block;
+    color: black;
+  }
+  .btn-btn-primary{
+    border: 2px solid black;
+    padding: 4px 18px;
+    border-radius: 9px;
+    color: antiquewhite;
+    background-color: black;
+    text-decoration: none;
+  }

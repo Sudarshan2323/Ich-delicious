@@ -1,0 +1,71 @@
+form {
+  max-width: 850px;
+  padding: 30px;
+  border: 2px solid black;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  gap: 30px;
+}
+h1{
+  font-size: 44px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+  color: white;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+}
+textarea {
+  height: 100px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  margin: 30px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.wrap{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*background: linear-gradient(60deg, #00ffff,#ff02ff);*/
+  background-color:#4CAF50;
+  border-radius: 5px;
+}
+.reg{
+  background-color: whitesmoke;
+  padding: 100px;
+  padding-top: 30px;
+  padding-right: 250px;
+  padding-left: 250px;
+
+}
+.reg-btn{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    margin: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+  }
